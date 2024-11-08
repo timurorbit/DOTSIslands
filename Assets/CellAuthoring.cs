@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using Unity.Entities;
+using Unity.Rendering;
 using UnityEngine;
 
 public class CellAuthoring : MonoBehaviour
@@ -12,6 +13,7 @@ public class CellAuthoring : MonoBehaviour
             var entity = GetEntity(TransformUsageFlags.Dynamic);
 
             AddComponent<CellAuthoring>(entity);
+            AddComponent<URPMaterialPropertyBaseColor>(entity);
         }
     }
 }

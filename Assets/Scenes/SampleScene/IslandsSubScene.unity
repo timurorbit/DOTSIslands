@@ -171,6 +171,17 @@ MonoBehaviour:
   gridHeight: 30
   gridWidth: 30
   maxHeight: 1000
+  waterColor: {r: 0.2747864, g: 0.3693534, b: 0.8962264, a: 0}
+  sandColor: {r: 0.9811321, g: 0.9053321, b: 0.1342115, a: 0}
+  groundColor: {r: 0.6899387, g: 1, b: 0.6179246, a: 0}
+  highGroundColor: {r: 0.29820594, g: 0.5754717, b: 0.046146322, a: 0}
+  mountainColor: {r: 0.2838797, g: 0.31132078, b: 0.016153438, a: 0}
+  highMountainColor: {r: 0, g: 0, b: 0, a: 0}
+  sandThreshold: 0.2
+  groundThreshold: 0.4
+  highGroundThreshold: 0.6
+  mountainThreshold: 0.8
+  highMountainThreshold: 0.1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
