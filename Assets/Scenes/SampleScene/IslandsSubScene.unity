@@ -181,7 +181,7 @@ MonoBehaviour:
   groundThreshold: 0.4
   highGroundThreshold: 0.6
   mountainThreshold: 0.8
-  highMountainThreshold: 0.1
+  highMountainThreshold: 1
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
