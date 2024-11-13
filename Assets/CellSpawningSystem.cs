@@ -65,8 +65,7 @@ partial struct CellSpawningSystem : ISystem
                 {
                     Value = float4x4.Scale(1f, yScale, 1f)
                 });
-
-             //   state.EntityManager.AddComponent<Cell>(cellEntity);
+                
                 state.EntityManager.SetComponentData(cellEntity, new Cell()
                 {
                     height = calculatedScale
