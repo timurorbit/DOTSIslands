@@ -12,7 +12,7 @@ public class CellAuthoring : MonoBehaviour
         {
             var entity = GetEntity(TransformUsageFlags.Dynamic);
 
-            AddComponent<CellAuthoring>(entity);
+            AddComponent<Cell>(entity);
             AddComponent<URPMaterialPropertyBaseColor>(entity);
         }
     }
@@ -20,4 +20,5 @@ public class CellAuthoring : MonoBehaviour
 
 public struct Cell : IComponentData
 {
+    public int height;
 }

@@ -56,14 +56,20 @@ partial struct CellSpawningSystem : ISystem
                     Rotation = quaternion.identity
                 });
 
-                float calculatedScale = spawnData[i,j];
-                var yScale = 1 + ((calculatedScale / 1000) * (10 - 1));
+                int calculatedScale = spawnData[i,j];
+                var yScale = 1 + (((float)calculatedScale / 1000) * (10 - 1));
 
 
                 state.EntityManager.AddComponent<PostTransformMatrix>(cellEntity);
                 state.EntityManager.SetComponentData(cellEntity, new PostTransformMatrix
                 {
                     Value = float4x4.Scale(1f, yScale, 1f)
+                });
+
+             //   state.EntityManager.AddComponent<Cell>(cellEntity);
+                state.EntityManager.SetComponentData(cellEntity, new Cell()
+                {
+                    height = calculatedScale
                 });
 
                 var mappedColor = this.mapColor(calculatedScale, 1000);
