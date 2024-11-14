@@ -56,10 +56,16 @@ public class ConfigAuthoring : MonoBehaviour
                 mountainThreshold = authoring.mountainThreshold,
                 highMountainThreshold = authoring.highMountainThreshold,
             });
+            AddComponent<Hit>(entity);
         }
     }
 }
 
+public struct Hit : IComponentData
+{
+    public float3 Value;
+    public bool HitChanged;
+}
 public struct Config : IComponentData
 {
     public Entity cellPrefab;
